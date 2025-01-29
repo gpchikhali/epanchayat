@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="d-flex justify-content-between p-3 bg-dark text-white">
+        <div class="logo">
+            <h1>Website Logo</h1>
+        </div>
+        <div class="auth-buttons">
+            <a href="#login" class="btn btn-light">Login</a>
+            <a href="#home" class="btn btn-light">Home</a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section id="hero-section" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="hero-slide" style="background-image: url('image/1.jpg');">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption d-block text-center">
+                        <h1>Welcome to Our Website</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="#read-more" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('image/2.jpg');">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption d-block text-center">
+                        <h1>Our Mission</h1>
+                        <p>Phasellus venenatis dui nec lectus fermentum, non tincidunt augue gravida.</p>
+                        <p>Phasellus venenatis dui nec lectus fermentum.</p>
+                        <p>Non tincidunt augue gravida.</p>
+                        <a href="#read-more" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more slides here -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-section" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-section" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-section" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#hero-section" data-bs-slide-to="1"></button>
+            <!-- Add more indicators here -->
+        </div>
+    </section>
+
+     <!-- About Us Section -->
+     <section id="about-us" class="container my-5">
+        <div class="row">
+            <!-- Left Side: Tabs -->
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <!-- Tabs -->
+                <ul class="nav nav-tabs" id="aboutTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="company-tab" data-bs-toggle="tab" href="#company" role="tab" aria-controls="company" aria-selected="true">Our Company</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="mission-tab" data-bs-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Our Mission</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="vision-tab" data-bs-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="false">Our Vision</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="aboutTabsContent">
+                    <!-- Tab Content: Our Company -->
+                    <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="company-tab">
+                        <h4>Our Company</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
+                        <a href="#learn-more" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <!-- Tab Content: Our Mission -->
+                    <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                        <h4>Our Mission</h4>
+                        <p>Our mission is to provide quality service that enhances the community through a commitment to innovation, sustainability, and customer satisfaction.</p>
+                        <a href="#learn-more" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <!-- Tab Content: Our Vision -->
+                    <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+                        <h4>Our Vision</h4>
+                        <p>Our vision is to become a global leader in providing solutions that enrich lives, strengthen communities, and promote sustainable development.</p>
+                        <a href="#learn-more" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Image --> 
+            <div class="col-md-6">
+                <img src="about-image.jpg" alt="About Us Image" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!-- Services Section -->
+<section id="services" class="py-5">
+    <div class="container">
+        <!-- Section Heading -->
+        <div class="text-center mb-4">
+            <h2>Our Services</h2>
+            <p>We offer a variety of professional services to meet your needs and help you achieve your goals effectively.</p>
+        </div>
+
+        <!-- Service Boxes -->
+        <div class="row text-center">
+            <!-- Service Box 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-box p-4 border rounded">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-briefcase" style="font-size: 2rem; color: #007bff;"></i>
+                    </div>
+                    <h4>Service 1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec est id lacus.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                </div>
+            </div>
+            <!-- Service Box 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-box p-4 border rounded">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-gear" style="font-size: 2rem; color: #007bff;"></i>
+                    </div>
+                    <h4>Service 2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec est id lacus.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                </div>
+            </div>
+            <!-- Service Box 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-box p-4 border rounded">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-bar-chart" style="font-size: 2rem; color: #007bff;"></i>
+                    </div>
+                    <h4>Service 3</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec est id lacus.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                </div>
+            </div>
+            <!-- Service Box 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-box p-4 border rounded">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-people" style="font-size: 2rem; color: #007bff;"></i>
+                    </div>
+                    <h4>Service 4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec est id lacus.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                </div>
+            </div>
+            <!-- Service Box 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-box p-4 border rounded">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-lightbulb" style="font-size: 2rem; color: #007bff;"></i>
+                    </div>
+                    <h4>Service 5</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec est id lacus.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                </div>
+            </div>
+            <!-- Service Box 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-box p-4 border rounded">
+                    <div class="service-icon mb-3">
+                        <i class="bi bi-globe" style="font-size: 2rem; color: #007bff;"></i>
+                    </div>
+                    <h4>Service 6</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec est id lacus.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <!-- Section Heading -->
+        <div class="text-center mb-4">
+            <h2>Our Projects</h2>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs justify-content-center mb-4" id="projectTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab">All Apps</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="branding-tab" data-bs-toggle="tab" data-bs-target="#branding" type="button" role="tab">Project Branding</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="books-tab" data-bs-toggle="tab" data-bs-target="#books" type="button" role="tab">Books</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button" role="tab">YouTube Videos</button>
+            </li>
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content" id="projectTabsContent">
+            <!-- All Apps Tab -->
+            <div class="tab-pane fade show active" id="all" role="tabpanel">
+                <div class="row g-4">
+                    <!-- Row 1 -->
+                    <div class="col-md-4">
+                        <div class="project-item position-relative">
+                            <img src="images/project1.jpg" alt="Project 1" class="img-fluid" style="height: 250px; width: 100%; object-fit: cover;">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h4>Project 1</h4>
+                                    <p>Details about Project 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-item position-relative" style="transform: translateY(-20px);">
+                            <img src="images/project2.jpg" alt="Project 2" class="img-fluid" style="height: 250px; width: 100%; object-fit: cover;">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h4>Project 2</h4>
+                                    <p>Details about Project 2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-item position-relative">
+                            <img src="images/3.jpg" alt="image 3" class="img-fluid" style="height: 250px; width: 100%; object-fit: cover;">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h4>Project 3</h4>
+                                    <p>Details about Project 3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="col-md-4">
+                        <div class="project-item position-relative" style="transform: translateY(20px);">
+                            <img src="images/4.jpg" alt="image 4" class="img-fluid" style="height: 250px; width: 100%; object-fit: cover;">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h4>Project 4</h4>
+                                    <p>Details about Project 4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-item position-relative">
+                            <img src="images/5.jpg" alt="image 5" class="img-fluid" style="height: 250px; width: 100%; object-fit: cover;">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h4>Project 5</h4>
+                                    <p>Details about Project 5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project-item position-relative">
+                            <img src="images/6.jpg" alt="image 6" class="img-fluid" style="height: 250px; width: 100%; object-fit: cover;">
+                            <div class="overlay">
+                                <div class="overlay-content">
+                                    <h4>Project 6</h4>
+                                    <p>Details about Project 6</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Branding Tab -->
+            <div class="tab-pane fade" id="branding" role="tabpanel">
+                <p>Branding-related content goes here.</p>
+            </div>
+
+            <!-- Books Tab -->
+            <div class="tab-pane fade" id="books" role="tabpanel">
+                <p>Books-related content goes here.</p>
+            </div>
+
+            <!-- Videos Tab -->
+            <div class="tab-pane fade" id="videos" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoid1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoid2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+          <h2 class="mb-4">Contact Us</h2>
+          <form action="#" method="post" id="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" class="form-control" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+  
+        <!-- Google Map -->
+        <div class="col-lg-6">
+          <h2 class="mb-4">Our Location</h2>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.158840174277!2d90.3585161154135!3d23.7818836845896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c74e9cd6f99f%3A0x6e60a1e730a8a32!2sDhaka!5e0!3m2!1sen!2sbd!4v1682975963699!5m2!1sen!2sbd" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Photo Album: 6 Boxes -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="path-to-your-image1.jpg" class="card-img-top" alt="Image 1">
+            <div class="card-body">
+              <h5 class="card-title">Image Title 1</h5>
+              <p class="card-text">Description for image 1.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="path-to-your-image2.jpg" class="card-img-top" alt="Image 2">
+            <div class="card-body">
+              <h5 class="card-title">Image Title 2</h5>
+              <p class="card-text">Description for image 2.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="path-to-your-image3.jpg" class="card-img-top" alt="Image 3">
+            <div class="card-body">
+              <h5 class="card-title">Image Title 3</h5>
+              <p class="card-text">Description for image 3.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="path-to-your-image4.jpg" class="card-img-top" alt="Image 4">
+            <div class="card-body">
+              <h5 class="card-title">Image Title 4</h5>
+              <p class="card-text">Description for image 4.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="path-to-your-image5.jpg" class="card-img-top" alt="Image 5">
+            <div class="card-body">
+              <h5 class="card-title">Image Title 5</h5>
+              <p class="card-text">Description for image 5.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="path-to-your-image6.jpg" class="card-img-top" alt="Image 6">
+            <div class="card-body">
+              <h5 class="card-title">Image Title 6</h5>
+              <p class="card-text">Description for image 6.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <section id="widgets" class="py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Recent Posts Widget -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div class="card-header bg-primary text-white">
+                  <h4>Recent Posts</h4>
+                </div>
+                <div class="card-body">
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark">Post Title 1</a></li>
+                    <li><a href="#" class="text-dark">Post Title 2</a></li>
+                    <li><a href="#" class="text-dark">Post Title 3</a></li>
+                    <li><a href="#" class="text-dark">Post Title 4</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Popular Posts Widget -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div class="card-header bg-success text-white">
+                  <h4>Popular Posts</h4>
+                </div>
+                <div class="card-body">
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark">Popular Post 1</a></li>
+                    <li><a href="#" class="text-dark">Popular Post 2</a></li>
+                    <li><a href="#" class="text-dark">Popular Post 3</a></li>
+                    <li><a href="#" class="text-dark">Popular Post 4</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Search Widget -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div class="card-header bg-info text-white">
+                  <h4>Search</h4>
+                </div>
+                <div class="card-body">
+                  <form action="#" method="get">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search..." name="search" id="search-widget">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Newsletter Subscription Widget -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div class="card-header bg-warning text-dark">
+                  <h4>Subscribe to Newsletter</h4>
+                </div>
+                <div class="card-body">
+                  <form action="#" method="post">
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email-widget" required>
+                    </div>
+                    <button type="submit" class="btn btn-warning btn-block">Subscribe</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Recent Comments Widget -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div class="card-header bg-dark text-white">
+                  <h4>Recent Comments</h4>
+                </div>
+                <div class="card-body">
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark"><strong>User 1</strong> on <em>Post Title 1</em></a></li>
+                    <li><a href="#" class="text-dark"><strong>User 2</strong> on <em>Post Title 2</em></a></li>
+                    <li><a href="#" class="text-dark"><strong>User 3</strong> on <em>Post Title 3</em></a></li>
+                    <li><a href="#" class="text-dark"><strong>User 4</strong> on <em>Post Title 4</em></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Tags Cloud Widget -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div class="card-header bg-secondary text-white">
+                  <h4>Tags Cloud</h4>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="badge badge-pill badge-primary">Web Development</a>
+                  <a href="#" class="badge badge-pill badge-success">SEO</a>
+                  <a href="#" class="badge badge-pill badge-info">Design</a>
+                  <a href="#" class="badge badge-pill badge-warning">Marketing</a>
+                  <a href="#" class="badge badge-pill badge-danger">HTML</a>
+                  <a href="#" class="badge badge-pill badge-dark">CSS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Noticeboard Section -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header bg-warning text-dark">
+              <h4>Noticeboard</h4>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li><strong>Notice 1:</strong> Important announcement about the upcoming event.</li>
+                <li><strong>Notice 2:</strong> Registration for the new program is now open.</li>
+                <li><strong>Notice 3:</strong> The website maintenance will take place this weekend.</li>
+                <li><strong>Notice 4:</strong> Don't forget to subscribe to our newsletter for updates.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Contact Info Section -->
+        <div class="col-md-4">
+          <h4>Contact Us</h4>
+          <p>123 Street Name, City, Country</p>
+          <p>Email: contact@grampanchayatchikhali.in</p>
+          <p>Phone: +123 456 7890</p>
+        </div>
+  
+        <!-- Quick Links Section -->
+        <div class="col-md-4">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Home</a></li>
+            <li><a href="#" class="text-light">About Us</a></li>
+            <li><a href="#" class="text-light">Our Services</a></li>
+            <li><a href="#" class="text-light">Projects</a></li>
+            <li><a href="#" class="text-light">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Media Section -->
+        <div class="col-md-4">
+          <h4>Follow Us</h4>
+          <div class="d-flex">
+            <a href="#" class="btn btn-social-icon btn-facebook mr-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="btn btn-social-icon btn-twitter mr-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="btn btn-social-icon btn-linkedin mr-2"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="btn btn-social-icon btn-instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Google Map Section -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <h4>Our Location</h4>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=...your-location-map-url..." allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Copyright Section -->
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <p>&copy; 2025 Gram Panchayat Chikhali. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  

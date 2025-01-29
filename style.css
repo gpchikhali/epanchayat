@@ -1,0 +1,226 @@
+/*
+Theme Name: Gram Panchayat Chikhali
+Theme URI: https://grampanchayatchikhali.in/
+Author: Your Name
+Author URI: https://yourwebsite.com
+Description: A custom theme for Gram Panchayat Chikhali website.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: grampanchayatchikhali
+*/
+
+/* Body & Header */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+/* grampanchayatchikhali.in */
+header .logo h1 {
+    font-family: 'Arial', sans-serif; /* Choose a font that suits your branding */
+    font-size: 36px; /* Adjust size based on your design */
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/* Auth buttons */
+.auth-buttons a {
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-buttons a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+#hero-section {
+    position: relative;
+}
+
+.hero-slide {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+}
+
+.carousel-indicators button {
+    background-color: white;
+}
+
+.carousel-indicators .active {
+    background-color: #007bff;
+}
+
+/* About Us Section */
+#about-us h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#about-us .nav-tabs {
+    border-bottom: 2px solid #ccc;
+}
+
+#about-us .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#about-us .tab-content {
+    margin-top: 20px;
+}
+
+#about-us .tab-pane h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#about-us .tab-pane p {
+    font-size: 1.2rem;
+}
+
+#about-us .btn-primary {
+    margin-top: 10px;
+}
+
+/* Right-side image styling */
+#about-us .col-md-6 img {
+    border-radius: 500px;
+    box-shadow: 0 250px 60px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section */
+#services h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#services p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.service-box {
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon i {
+    margin-bottom: 10px;
+}
+
+.service-box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url('../img/plus-icon.png')
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: opacity 0.3s ease;
+}
+
+.project-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-content h4 {
+    margin-bottom: 10px;
+}
+
+/* Custom Widget Styling */
+.card {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+  }
+  
+  .card-header {
+    font-size: 1.2em;
+  }
+  
+  .card-body {
+    font-size: 1em;
+  }
+  
+  .badge {
+    margin: 5px;
+    font-size: 0.9em;
+  }
+  
